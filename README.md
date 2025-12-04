@@ -1,21 +1,23 @@
+
 ````markdown
 # Análise RFV - Aplicação Web Completa 🛍️
 
-Aplicação web completa para análise de **RFV** (Recência, Frequência, Valor Monetário) com backend em [Python](https://www.python.org/)/[FastAPI](https://fastapi.tiangolo.com/) e frontend em [React](https://react.dev/).
+Aplicação web completa para análise de **RFV** (Recência, Frequência, Valor Monetário)
+com backend em [Python](https://www.python.org/)/[FastAPI](https://fastapi.tiangolo.com/) e frontend em [React](https://react.dev/).
 
 ## 🚀 Tecnologias
 
 | Área | Tecnologia | Versão/Detalhe |
 | :--- | :--- | :--- |
 | **Backend** | Python | 3.10+ |
-| | FastAPI | Framework Web |
-| | Pandas | Manipulação de Dados |
-| | NumPy | Computação Numérica |
+| **Backend** | FastAPI | Framework Web |
+| **Backend** | Pandas | Manipulação de Dados |
+| **Backend** | NumPy | Computação Numérica |
 | **Frontend** | React | 18 |
-| | Vite | Tooling |
-| | Tailwind CSS | Estilização |
-| | Recharts | Gráficos |
-| | Axios | Requisições HTTP |
+| **Frontend** | Vite | Tooling |
+| **Frontend** | Tailwind CSS | Estilização |
+| **Frontend** | Recharts | Gráficos |
+| **Frontend** | Axios | Requisições HTTP |
 
 ## 📋 Requisitos
 
@@ -199,9 +201,9 @@ Se encontrar problemas de execução de scripts no PowerShell:
 
 Este projeto é de código aberto e está disponível para uso livre.
 
-````
+```
 
-Você pode copiar todo o conteúdo acima (incluindo a primeira e a última linha ` ``` ` se estiver colando em um editor de texto ou IDE, mas **apenas o texto entre elas** se estiver colando diretamente no arquivo `README.md` do GitHub).
+**Por favor, tente copiar e colar este conteúdo no seu arquivo `README.md` e verifique como ele é renderizado no GitHub ou em um visualizador Markdown online.**
 
-Me avise se precisar de mais alguma ajuda ou detalhe!
-````
+Se o problema persistir, pode ser um problema com o seu visualizador específico, mas este é o formato Markdown mais correto e robusto para o GitHub.
+```

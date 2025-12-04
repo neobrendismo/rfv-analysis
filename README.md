@@ -9,21 +9,21 @@ com backend em [Python](https://www.python.org/)/[FastAPI](https://fastapi.tiang
 
 | Área | Tecnologia | Versão/Detalhe |
 | :--- | :--- | :--- |
-| **Backend** | Python | 3.10+ |
-| **Backend** | FastAPI | Framework Web |
-| **Backend** | Pandas | Manipulação de Dados |
-| **Backend** | NumPy | Computação Numérica |
-| **Frontend** | React | 18 |
-| **Frontend** | Vite | Tooling |
-| **Frontend** | Tailwind CSS | Estilização |
-| **Frontend** | Recharts | Gráficos |
-| **Frontend** | Axios | Requisições HTTP |
+| **Backend** | Python 3.10+ | - |
+| | FastAPI | Framework Web |
+| | Pandas | Manipulação de Dados |
+| | NumPy | Computação Numérica |
+| **Frontend** | React 18 | - |
+| | Vite | Tooling |
+| | Tailwind CSS | Estilização |
+| | Recharts | Gráficos |
+| | Axios | Requisições HTTP |
 
 ## 📋 Requisitos
 
 Para rodar a aplicação, você precisa ter instalado:
-* [Python](https://www.python.org/) **3.10** ou superior
-* [Node.js](https://nodejs.org/en) **18** ou superior
+* **Python 3.10** ou superior (Baixe [aqui](https://www.python.org/))
+* **Node.js 18** ou superior (Baixe [aqui](https://nodejs.org/en))
 * **npm** ou **yarn**
 
 ---
@@ -97,14 +97,14 @@ npm run dev
 | Segmento | Regra | R | F | V | Detalhe |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **NOVOS** | 1ª compra nos últimos 60 dias | - | - | - | Não são pontuados com R, F, V. |
-| **CAMPEÃO** | R=5, F$\ge$3, V=5 | 5 | $\ge$3 | 5 | Clientes mais valiosos. |
-| **LEAIS** | R=3/4, Média(F+V)$\ge$3 | 3/4 | $\ge$3 | - | Compram regularmente. |
-| **POTENCIAIS** | (R=5, Média$\ge$3, V$\ge$3) OU (R=4, Média$\ge$2, V=3/4) | 5 ou 4 | $\ge$3 ou $\ge$2 | $\ge$3 ou 3/4 | Alto potencial. |
-| **PROMISSORES** | R$\ge$4, Média$\ge$2, Média\<3 | $\ge$4 | $\ge$2 | $\ge$2 | Recentes, mas precisam de mais F/V. |
+| **CAMPEÃO** | R=5, F≥3, V=5 | 5 | ≥3 | 5 | Clientes mais valiosos. |
+| **LEAIS** | R=3/4, Média(F+V)≥3 | 3/4 | ≥3 | - | Compram regularmente. |
+| **POTENCIAIS** | (R=5, Média≥3, V≥3) OU (R=4, Média≥2, V=3/4) | 5 ou 4 | ≥3 ou ≥2 | ≥3 ou 3/4 | Alto potencial. |
+| **PROMISSORES** | R≥4, Média≥2, Média\<3 | ≥4 | ≥2 | ≥2 | Recentes, mas precisam de mais F/V. |
 | **HIBERNANDO** | R=2, Média \< 4 | 2 | \<4 | \<4 | Risco de se tornarem inativos. |
-| **PREOCUPANTES** | R=2, Média $\ge$ 4 | 2 | $\ge$4 | $\ge$4 | Não compram há um tempo, mas eram bons clientes. |
+| **PREOCUPANTES** | R=2, Média ≥ 4 | 2 | ≥4 | ≥4 | Não compram há um tempo, mas eram bons clientes. |
 | **RISCO** | R=1, Média \< 4 | 1 | \<4 | \<4 | Clientes inativos e de baixo valor. |
-| **NAO\_PODEMOS\_PERDER** | R=1, Média $\ge$ 4 | 1 | $\ge$4 | $\ge$4 | Clientes valiosos que estão inativos. |
+| **NAO\_PODEMOS\_PERDER** | R=1, Média ≥ 4 | 1 | ≥4 | ≥4 | Clientes valiosos que estão inativos. |
 
 -----
 
@@ -203,7 +203,3 @@ Este projeto é de código aberto e está disponível para uso livre.
 
 ```
 
-**Por favor, tente copiar e colar este conteúdo no seu arquivo `README.md` e verifique como ele é renderizado no GitHub ou em um visualizador Markdown online.**
-
-Se o problema persistir, pode ser um problema com o seu visualizador específico, mas este é o formato Markdown mais correto e robusto para o GitHub.
-```

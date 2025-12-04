@@ -9,11 +9,11 @@ com backend em [Python](https://www.python.org/)/[FastAPI](https://fastapi.tiang
 
 | Área | Tecnologia | Versão/Detalhe |
 | :--- | :--- | :--- |
-| **Backend** | Python 3.10+ | - |
+| Backend | Python 3.10+ | - |
 | | FastAPI | Framework Web |
 | | Pandas | Manipulação de Dados |
 | | NumPy | Computação Numérica |
-| **Frontend** | React 18 | - |
+| Frontend | React 18 | - |
 | | Vite | Tooling |
 | | Tailwind CSS | Estilização |
 | | Recharts | Gráficos |

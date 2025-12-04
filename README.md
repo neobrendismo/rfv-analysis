@@ -180,4 +180,7 @@ Se encontrar problemas de execução de scripts no PowerShell:
   * Use o arquivo `frontend/start_frontend.cmd` (clique duas vezes).
   * Ou utilize o **Prompt de Comando (CMD)** em vez do PowerShell para rodar os comandos manuais.
 
+**\#\# Licença**
+
+Este projeto é de código aberto e está disponível para uso livre.
 

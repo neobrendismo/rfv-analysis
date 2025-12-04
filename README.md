@@ -1,7 +1,3 @@
-Com certeza\! O formato que enviei anteriormente já é o **Markdown completo** (o padrão para `README.md` no GitHub) e está pronto para ser copiado.
-
-Para sua conveniência e para garantir que você possa copiar **tudo de uma vez**, aqui está o conteúdo exato do `README.md` em um único bloco de código:
-
 ````markdown
 # Análise RFV - Aplicação Web Completa 🛍️
 

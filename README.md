@@ -1,43 +1,44 @@
-
-````markdown
 # Análise RFV - Aplicação Web Completa 🛍️
 
 Aplicação web completa para análise de **RFV** (Recência, Frequência, Valor Monetário) com backend em [Python](https://www.python.org/)/[FastAPI](https://fastapi.tiangolo.com/) e frontend em [React](https://react.dev/).
 
-**## Tecnologias**
+## 🚀 Tecnologias
 
 | Área | Tecnologia | Versão/Detalhe |
 | :--- | :--- | :--- |
 | **Backend** | Python 3.10+ | - |
-| **Backend** | FastAPI | Framework Web |
-| **Backend** | Pandas | Manipulação de Dados |
-| **Backend** | NumPy | Computação Numérica |
+| | FastAPI | Framework Web |
+| | Pandas | Manipulação de Dados |
+| | NumPy | Computação Numérica |
 | **Frontend** | React 18 | - |
-| **Frontend** | Vite | Tooling |
-| **Frontend** | Tailwind CSS | Estilização |
-| **Frontend** | Recharts | Gráficos |
-| **Frontend** | Axios | Requisições HTTP |
+| | Vite | Tooling |
+| | Tailwind CSS | Estilização |
+| | Recharts | Gráficos |
+| | Axios | Requisições HTTP |
 
-**## Requisitos**
+## 📋 Requisitos
 
 Para rodar a aplicação, você precisa ter instalado:
 * **Python 3.10** ou superior (Baixe [aqui](https://www.python.org/))
 * **Node.js 18** ou superior (Baixe [aqui](https://nodejs.org/en))
 * **npm** ou **yarn**
 
-**## Início Rápido**
+---
 
-**### Método Automático (Recomendado)**
+## 🚀 Início Rápido
+
+### Método Automático (Recomendado)
 
 Basta **clicar duas vezes** no arquivo `iniciar_aplicacao.bat` (somente para Windows).
 
 > ℹ️ Isso iniciará automaticamente o backend e o frontend em janelas separadas.
 
-**### Método Manual**
+### Método Manual
 
 Siga os passos abaixo em terminais separados para o Backend e Frontend.
 
-**Backend:**
+#### Backend:
+
 ```bash
 # 1. Entre na pasta do backend
 cd backend

@@ -1,43 +1,48 @@
 
+
 ````markdown
 # Análise RFV - Aplicação Web Completa 🛍️
 
-Aplicação web completa para análise de **RFV** (Recência, Frequência, Valor Monetário) com backend em [Python](https://www.python.org/)/[FastAPI](https://fastapi.tiangolo.com/) e frontend em [React](https://react.dev/).
+Aplicação web completa para análise de **RFV** (Recência, Frequência, Valor Monetário)
+com backend em [Python](https://www.python.org/)/[FastAPI](https://fastapi.tiangolo.com/) e frontend em [React](https://react.dev/).
 
-**## Tecnologias**
+## 🚀 Tecnologias
 
 | Área | Tecnologia | Versão/Detalhe |
 | :--- | :--- | :--- |
 | **Backend** | Python 3.10+ | - |
-| **Backend** | FastAPI | Framework Web |
-| **Backend** | Pandas | Manipulação de Dados |
-| **Backend** | NumPy | Computação Numérica |
+| | FastAPI | Framework Web |
+| | Pandas | Manipulação de Dados |
+| | NumPy | Computação Numérica |
 | **Frontend** | React 18 | - |
-| **Frontend** | Vite | Tooling |
-| **Frontend** | Tailwind CSS | Estilização |
-| **Frontend** | Recharts | Gráficos |
-| **Frontend** | Axios | Requisições HTTP |
+| | Vite | Tooling |
+| | Tailwind CSS | Estilização |
+| | Recharts | Gráficos |
+| | Axios | Requisições HTTP |
 
-**## Requisitos**
+## 📋 Requisitos
 
 Para rodar a aplicação, você precisa ter instalado:
 * **Python 3.10** ou superior (Baixe [aqui](https://www.python.org/))
 * **Node.js 18** ou superior (Baixe [aqui](https://nodejs.org/en))
 * **npm** ou **yarn**
 
-**## Início Rápido**
+---
 
-**### Método Automático (Recomendado)**
+## 🚀 Início Rápido
+
+### Método Automático (Recomendado)
 
 Basta **clicar duas vezes** no arquivo `iniciar_aplicacao.bat` (somente para Windows).
 
 > ℹ️ Isso iniciará automaticamente o backend e o frontend em janelas separadas.
 
-**### Método Manual**
+### Método Manual
 
 Siga os passos abaixo em terminais separados para o Backend e Frontend.
 
-**Backend:**
+#### Backend:
+
 ```bash
 # 1. Entre na pasta do backend
 cd backend
@@ -47,7 +52,7 @@ pip install -r requirements.txt
 python main.py
 ````
 
-**Frontend:**
+#### Frontend:
 
 ```bash
 # 1. Entre na pasta do frontend
@@ -61,23 +66,27 @@ npm run dev
 **Acesse a aplicação no navegador:**
 👉 [http://localhost:5173](https://www.google.com/search?q=http://localhost:5173)
 
-**\#\#\# Parar a Aplicação**
+### Parar a Aplicação
 
   * **Clique duas vezes** em `parar_aplicacao.bat` (Windows)
   * Ou pressione `Ctrl + C` nos terminais onde os processos estão rodando.
 
-**\#\# Como Usar**
+-----
+
+## 📖 Como Usar
 
 1.  **Upload de Arquivo CSV** - Faça upload de um arquivo CSV com dados de transações.
 2.  **Mapeamento de Colunas** - Selecione as colunas correspondentes (**ID Cliente, Data, Valor**, etc.) na interface.
 3.  **Análise de Outliers** - Visualize e escolha como tratar valores extremos.
 4.  **Dashboard** - Visualize os resultados da segmentação, gráficos e baixe o **CSV/PDF** processado.
 
-**\#\# Regras de Segmentação RFV**
+-----
+
+## 📊 Regras de Segmentação RFV
 
 **Nota:** Os intervalos de **Recência**, **Frequência** e **Valor** são calculados dinamicamente usando **quintis** da base de dados analisada.
 
-**\#\#\# Scores**
+### Scores
 
 | Score | Descrição | Base de Cálculo |
 | :--- | :--- | :--- |
@@ -85,7 +94,7 @@ npm run dev
 | **Frequência (F)** | Quantidade de compras (últimos 12 meses). | Quintis da quantidade. |
 | **Valor Monetário (V)** | Valor total gasto (últimos 12 meses). | Quintis do valor. |
 
-**\#\#\# Segmentos**
+### Segmentos
 
 | Segmento | Regra | R | F | V | Detalhe |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -99,7 +108,9 @@ npm run dev
 | **RISCO** | R=1, Média \< 4 | 1 | \<4 | \<4 | Clientes inativos e de baixo valor. |
 | **NAO\_PODEMOS\_PERDER** | R=1, Média ≥ 4 | 1 | ≥4 | ≥4 | Clientes valiosos que estão inativos. |
 
-**\#\# Estrutura do Projeto**
+-----
+
+## 📁 Estrutura do Projeto
 
 ```
 RFV_2/
@@ -125,7 +136,9 @@ RFV_2/
 └── README.md
 ```
 
-**\#\# Endpoints da API**
+-----
+
+## 🔌 Endpoints da API
 
 | Método | Endpoint | Descrição |
 | :--- | :--- | :--- |
@@ -135,7 +148,9 @@ RFV_2/
 | `GET` | `/download/{file_id}` | Download do CSV processado com scores e segmentos. |
 | `GET` | `/generate-pdf/{file_id}` | Download do relatório PDF completo. |
 
-**\#\# Formato do CSV**
+-----
+
+## 📝 Formato do CSV
 
 O arquivo CSV de entrada deve conter as seguintes colunas. Os nomes das colunas podem ser flexíveis, pois serão mapeados na interface:
 
@@ -144,7 +159,9 @@ O arquivo CSV de entrada deve conter as seguintes colunas. Os nomes das colunas 
   * **Data** (formato flexível, será detectado automaticamente)
   * **Valor Monetário**
 
-**\#\# Troubleshooting**
+-----
+
+## 🐛 Troubleshooting
 
 ### Porta 8000 ocupada (Backend)
 
@@ -180,7 +197,11 @@ Se encontrar problemas de execução de scripts no PowerShell:
   * Use o arquivo `frontend/start_frontend.cmd` (clique duas vezes).
   * Ou utilize o **Prompt de Comando (CMD)** em vez do PowerShell para rodar os comandos manuais.
 
-**\#\# Licença**
+-----
+
+## 📄 Licença
 
 Este projeto é de código aberto e está disponível para uso livre.
 
+```
+```

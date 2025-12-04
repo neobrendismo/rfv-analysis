@@ -78,7 +78,7 @@ npm run dev
 
 **Nota:** Os intervalos de **Recência**, **Frequência** e **Valor** são calculados dinamicamente usando **quintis** da base de dados analisada.
 
-**\#\#\# Scores**
+**### Scores**
 
 | Score | Descrição | Base de Cálculo |
 | :--- | :--- | :--- |
